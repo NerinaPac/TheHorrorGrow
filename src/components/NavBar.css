@@ -7,6 +7,10 @@ nav{
 
 }
 
+h1{
+    text-align: center;
+}
+
 nav li{
     list-style: none;
     
@@ -28,6 +32,8 @@ nav li{
     
     nav h1{
         font-size: 25px;       
-
+    }
+    .linkNavBar{
+        font-size: 16px;
     }
   }

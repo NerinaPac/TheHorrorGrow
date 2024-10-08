@@ -14,5 +14,6 @@
     .divFondo{    
         background-image: url("../assets/portada-man_celu.jpg");
         background-position: left;
+        height: 600px;
     }
   }
