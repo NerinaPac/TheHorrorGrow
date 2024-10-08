@@ -1,0 +1,33 @@
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+
+nav li{
+    list-style: none;
+    
+}
+
+.linkNavBar{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+
+}
+
+.linkNavBar:hover{
+
+    text-decoration: underline;
+}
+
+@media (max-width: 550px) {
+    
+    nav h1{
+        font-size: 25px;       
+
+    }
+  }
