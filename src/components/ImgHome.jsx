@@ -7,11 +7,7 @@ return(
     <div className="divFondo">       
         <Header></Header>
     </div>
-
-
 );
-
-
 }
 
 export default ImgHome;
