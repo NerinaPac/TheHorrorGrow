@@ -1,11 +1,11 @@
 import "./ImgHome.css"
-import NavBar from "./NavBar";
+import Header from "./Header";
 
 function ImgHome(){
 
 return(
     <div className="divFondo">       
-        <NavBar></NavBar>
+        <Header></Header>
     </div>
 
 

@@ -1,0 +1,70 @@
+header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+nav li{
+    list-style: none;
+}
+
+.logoNav{
+    display: flex;
+}
+.linkNavBar{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+.linkNavBar:hover{
+    text-decoration: underline;    
+}
+.buttonBurgue{
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 30%;  
+    display: none;
+}
+
+.oculto{
+    display: none;
+}
+
+@media (max-width: 550px) {
+
+    nav {
+        background-color: grey;
+        display: block;
+        text-align: center;
+        width: 100%;
+        }
+
+    nav li{
+        padding: 0.5rem 0;
+    
+    }
+ 
+    h1{
+        font-size: 35px;     
+    }
+
+    .buttonBurgue{
+        display: block;
+    }
+
+    .logoNav{
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0 ;
+   }
+
+ 
+}
