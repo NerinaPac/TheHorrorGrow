@@ -21,7 +21,7 @@ function Header(){
                 </button>
             </div>           
             <nav className={isOpen ? `oculto` : ``}> 
-                <Link className="linkNavBar" to={`/`}>
+                <Link className="linkNavBar" to={`/about`}>
                     <li>About</li> 
                 </Link>
                 

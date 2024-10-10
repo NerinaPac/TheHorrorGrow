@@ -7,6 +7,7 @@ import Home from "./views/Home";
 import Products from "./views/Products";
 
 import Error from "./views/Error"
+import About from './components/About';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Home />} /> 
+        <Route path="/about" element={<About />} /> 
         <Route path="/products" element={<Products />} /> 
         <Route path="*" element={<Error />} />
       </Routes>

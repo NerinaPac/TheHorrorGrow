@@ -4,11 +4,9 @@ import narguileImage from '../assets/narguile.jpg';
 function ContenidoInformativoPublicitario() {
    
 return(
-    <div className="espacioContenedor">
-        
-        <div className="contenedorElementosTextoImg">
-            
-            <div className="contenedorTexto" data-aos="fade-up-right">                
+    <div className="espacioContenedor">        
+        <div className="contenedorElementosTextoImg">            
+            <div className="contenedorTexto" data-aos="fade-up">                
                 <h3>ELEVA TU EXPERIENCIA DE FUMAR</h3>
                 <p>                
                 En THG transformamos cada momento de fumar en una experiencia única. 
@@ -17,12 +15,9 @@ return(
             </div>
             <div className="contenedorImg" data-aos="fade-up">
                 <img src={narguileImage} alt="Pipa Narguile" />
-
             </div>
         </div>
-
     </div>
-
 )
 
 }

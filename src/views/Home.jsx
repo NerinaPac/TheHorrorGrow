@@ -1,3 +1,4 @@
+import About from "../components/About";
 import ContenidoInformativoPublicitario from "../components/ContenidoInformativoPublicitario";
 import ImgHome from "../components/ImgHome";
 
@@ -7,6 +8,7 @@ return(
     <>
     <ImgHome />
     <ContenidoInformativoPublicitario />
+    <About></About>
 
     </>
     
