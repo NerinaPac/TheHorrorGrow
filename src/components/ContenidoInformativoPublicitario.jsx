@@ -1,6 +1,5 @@
-
-
 import "./ContenidoInformativoPublicitario.css"
+import narguileImage from '../assets/narguile.jpg';
 
 function ContenidoInformativoPublicitario() {
    
@@ -17,7 +16,7 @@ return(
                 </p>
             </div>
             <div className="contenedorImg" data-aos="fade-up-left">
-                <img src="./src/assets/narguile.jpg" alt="Pipa Narguile" />
+                <img src={narguileImage} alt="Pipa Narguile" />
 
             </div>
         </div>
