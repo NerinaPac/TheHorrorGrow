@@ -17,7 +17,7 @@ return(
                 </p>
             </div>
             <div className="contenedorImg" data-aos="fade-up-left">
-                <img src="/src/assets/narguile.jpg" alt="Pipa Narguile" />
+                <img src="./src/assets/narguile.jpg" alt="Pipa Narguile" />
 
             </div>
         </div>
