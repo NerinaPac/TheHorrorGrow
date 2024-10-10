@@ -1,11 +1,14 @@
+import ContenidoInformativoPublicitario from "../components/ContenidoInformativoPublicitario";
 import ImgHome from "../components/ImgHome";
 
 function Home() {
 
-return(
-       
-    
-    <ImgHome></ImgHome>
+return(      
+    <>
+    <ImgHome />
+    <ContenidoInformativoPublicitario />
+
+    </>
     
 
 )

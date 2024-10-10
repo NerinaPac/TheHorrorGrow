@@ -1,0 +1,37 @@
+.espacioContenedor{
+    padding-top: 3rem;
+}
+
+.contenedorElementosTextoImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+}
+
+.contenedorTexto{
+    max-width: 35rem;
+    text-align: center;
+    font-size: 25px;
+    line-height: 2;
+    color: aliceblue;
+
+}
+
+.contenedorImg{
+   max-width: 35rem;
+   box-shadow: 0 0 10px black;
+}
+
+
+@media (max-width: 550px) {
+
+    .contenedorTexto{
+        font-size: 25px;
+
+    }
+    
+
+}
