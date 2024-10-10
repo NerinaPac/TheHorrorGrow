@@ -15,7 +15,7 @@ return(
                 Descubre nuestra exclusiva selección de pipas, cigarrillos artesanales y accesorios de diseño que se adaptan a tu estilo. 
                 </p>
             </div>
-            <div className="contenedorImg" data-aos="fade-up-left">
+            <div className="contenedorImg" data-aos="fade-up">
                 <img src={narguileImage} alt="Pipa Narguile" />
 
             </div>
