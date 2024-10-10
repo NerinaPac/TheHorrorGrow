@@ -1,7 +1,7 @@
 .divFondo{
     width: 100%;
     height: 1000px;
-    background-image: url("../assets/portada-man_jason.jpg");
+    background-image: url("../assets/portada-man_jason2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 @media (max-width: 550px) {
     
     .divFondo{    
-        background-image: url("../assets/portada-man_celu.jpg");
+        background-image: url("../assets/portada-man_jason_celu.jpg");
         background-position: left;
     }
   }
