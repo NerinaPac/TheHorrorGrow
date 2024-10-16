@@ -6,14 +6,22 @@ function About() {
 return (
 
 <section id="about">
-    <h2>Acerca de Nosotros</h2>
- <div>
-    <div>
-texto
-    </div>
-    <div>
+    <h2 data-aos="fade-up">ACERCA DE NOSOTROS</h2>
+    <div className="contenedorAbout">
+    <div className="contenedorImg" data-aos="fade-up">
         <img src={imgJasonFreddy}></img>
     </div>
+
+
+    <div className="textAbout" data-aos="fade-up">
+        <p>Somos una pequeña empresa de amigos que comparte una gran pasión: el placer de fumar. Nos encanta disfrutar de un buen cigarrillo de marihuana, utilizando además, productos que hagan de esta experiencia algo especial. 
+            Nos aseguramos de ofrecer lo mejor para quienes, como nosotros, valoran un buen momento de relax.
+
+        Nuestro objetivo es compartir esta pasión con aquellos que disfrutan de fumar con estilo y autenticidad. ¡Bienvenidos a nuestro mundo, donde cada calada cuenta!
+
+        </p>
+    </div>
+   
  </div>
  
 </section>
