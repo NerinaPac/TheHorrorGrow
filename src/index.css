@@ -11,3 +11,10 @@ body{
 img{
   max-width: 100%;
 }
+
+h2, h3, h4{
+  font-size: 30px;
+  color: #660707;
+  text-shadow: 0px 2px 0 black;
+
+}

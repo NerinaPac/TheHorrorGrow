@@ -1,0 +1,12 @@
+.contenedorUbicacion{
+    padding-top: 3rem;
+}
+
+.contenedorMapaYText{
+    display: flex;
+    color: aliceblue;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
