@@ -19,7 +19,6 @@ function About() {
                 </div>
 
             </div>
-            <Ubicacion />
         
         </section>
 
