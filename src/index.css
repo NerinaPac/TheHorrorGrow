@@ -1,3 +1,15 @@
+:root {
+  --fondo: #121212;
+  --texto-principal: #F5F5F5;
+  --texto-secundario: #999999;
+  --titulo: #C0392B;
+  --enlace: #E74C3C;
+  --enlace-hover: #FF5733;
+  --boton: #8B0000;
+  --boton-hover: #FF4500;
+  --acento: #00FF41;
+}
+
 * {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
@@ -5,7 +17,7 @@
 }
 
 body{
-  background-color: rgb(6,6,6, 0.95);
+  background-color: var(--fondo);
 }
 
 img{
@@ -14,7 +26,6 @@ img{
 
 h2, h3, h4{
   font-size: 30px;
-  color: #660707;
-  text-shadow: 0px 2px 0 black;
-
+  color: var(--titulo);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }

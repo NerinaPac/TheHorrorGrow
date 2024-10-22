@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -21,9 +22,9 @@ function Header(){
                 </button>
             </div>           
             <nav className={isOpen ? `oculto` : ``}> 
-                <Link className="linkNavBar" to={`/about`}>
+                <HashLink smooth className="linkNavBar" to="#about">
                     <li>About</li> 
-                </Link>
+                </HashLink>
                 
                 <Link className="linkNavBar" to={`/products`}>
                     <li>Products</li>

@@ -1,6 +1,5 @@
 import "./About.css"
 import imgJasonFreddy from "../assets/about_jason_freddy.webp"
-import Ubicacion from "./Ubicacion";
 
 
 function About() {
