@@ -1,7 +1,7 @@
 import "./Card.css"
 
 function Card({infoProducto}) {
-    let imagen = `${infoProducto.imagen}`;
+    let imagen = `../../${infoProducto.imagen}`;
 
     return(
        <div className="card">
