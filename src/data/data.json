@@ -11,10 +11,235 @@
                 }
     },
 
-    "productos":""
-    
-
-
-
-
+    "productos": [
+        
+    {
+      "id": 1,
+      "nombre": "Kit Los Simpson",
+      "precio": 26000,
+      "descripcion": "Kit para fanáticos de Los Simpson con slider, picador Bart 3D de tres piezas y encendedor catalítico",
+      "imagen":"./src/assets/products/18.jpg",
+      "productos_incluidos": [
+        {
+          "nombre": "Slider Los Simpson",
+          "precio": 11500
+        },
+        {
+          "nombre": "Picador Bart 3D",
+          "precio": 14000,
+          "piezas": 3
+        },
+        {
+          "nombre": "Encendedor catalítico",
+          "precio": 4000
+        }
+      ]
+    },
+    {
+        "id": 2,
+        "nombre": "Kit Candy",
+        "precio": 44000,
+        "descripcion": "Kit para fanáticos de lo dulce, con bandeja, picador llavero Cogonauts, pipa IceCream silinona y encendedor clipper",
+        "imagen":"./src/assets/products/03.jpg",
+        "productos_incluidos": [
+          {
+            "nombre": "Bandeja pequeña de metal",
+            "precio": 8000
+          },
+          {
+            "nombre": "Picador Mini Skup Cogonauts",
+            "precio": 21000,
+            "piezas": 3
+          },
+          {
+            "nombre": "Encendedor Clipper",
+            "precio": 3000
+          },
+          {
+            "nombre": "Pipa IceCream Silicona",
+            "precio": 16000
+          }
+        ]
+      },
+    {
+        "id": 3,
+        "nombre": "Kit Star Wars (Picador Darth Vader)",
+        "precio": 35000,
+        "descripcion": "Kit para fanáticos de Star Wars con bandeja, picador y encendedor catalítico",
+        "imagen":"./src/assets/products/10.jpg",
+        "productos_incluidos": [
+          {
+            "nombre": "Bandeja Star Wars",
+            "precio": 8500
+          },
+          {
+            "nombre": "Picador Darth Vader",
+            "precio": 24000
+          },
+          {
+            "nombre": "Encendedor Catalítico",
+            "precio": 4000
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "nombre": "Kit Star Wars (Picador Estrella de la Muerte)",
+        "precio": 30000,
+        "descripcion": "Kit para fanáticos de Star Wars con bandeja, picador y encendedor catalítico",
+        "imagen":"./src/assets/products/10.jpg",
+        "productos_incluidos": [
+          {
+            "nombre": "Bandeja Star Wars",
+            "precio": 8500
+          },
+          {
+            "nombre": "Picador Estrella de la Muerte",
+            "precio": 20000,
+            "piezas": 3
+          },
+          {
+            "nombre": "Encendedor Magiclick Catalítico",
+            "precio": 4000
+          }
+        ]
+      },
+    {
+      "id": 5,
+      "nombre": "Kit Rick and Morty (Encendedor de bencina)",
+      "precio": 34000,
+      "descripcion": "Kit para fanáticos de Rick and Morty con bandeja, picador y encendedor de bencina",
+      "imagen":"./src/assets/products/17.jpg",
+      "productos_incluidos": [
+        {
+          "nombre": "Bandeja Rick and Morty",
+          "precio": 8500
+        },
+        {
+          "nombre": "Picador Rick and Morty",
+          "precio": 20000
+        },
+        {
+          "nombre": "Encendedor de bencina Rick and Morty",
+          "precio": 8500
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Kit Rick and Morty (Encendedor catalítico)",
+      "precio": 30000,
+      "descripcion": "Kit para fanáticos de Rick and Morty con bandeja, picador y encendedor catalítico",
+      "imagen":"./src/assets/products/17.jpg",
+      "productos_incluidos": [
+        {
+          "nombre": "Bandeja Rick and Morty",
+          "precio": 8500
+        },
+        {
+          "nombre": "Picador Rick and Morty",
+          "precio": 20000
+        },
+        {
+          "nombre": "Encendedor catalítico",
+          "precio": 4000
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nombre": "Slider Los Simpson",
+      "precio": 11500,
+      "descripcion": "Slider con temática de Los Simpson de 20x18cm",
+      "imagen":"./src/assets/products/21.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Picador Bart 3D",
+      "precio": 14000,
+      "descripcion": "Picador 3D de Bart con tres piezas",
+      "imagen":"./src/assets/products/19.jpg",
+      "piezas": 3
+    },
+    {
+      "id": 9, 
+      "nombre": "Encendedor catalítico",
+      "precio": 4000,
+      "descripcion": "Encendedor catalítico universal, varios colores.",
+      "imagen":"./src/assets/products/20.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Bandeja Rick and Morty",
+      "precio": 8500,
+      "descripcion": "Bandeja de metal grande 29x19cm con diseño de Rick and Morty",
+      "imagen":"./src/assets/products/15.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Picador Rick and Morty",
+      "precio": 20000,
+      "descripcion": "Picador con temática de Rick and Morty de 4 piezas",
+      "imagen":"./src/assets/products/14.jpg",
+      "piezas": 4
+    },
+    {
+      "id": 12,
+      "nombre": "Encendedor de bencina Rick and Morty",
+      "precio": 8500,
+      "descripcion": "Encendedor de bencina con diseño de Rick and Morty",
+      "imagen":"./src/assets/products/16.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Bandeja Star Wars",
+        "precio": 8500,
+        "descripcion": "Bandeja de metal grande 29x19cm con diseño de Star Wars",
+        "imagen":"./src/assets/products/11.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "Picador Estrella de la Muerte",
+        "precio": 20000,
+        "descripcion":"Picador con diseño de Estrella de la Muerte de 50mm",
+        "imagen":"./src/assets/products/09.jpg",
+        "piezas": 3
+    },
+    {
+        "id": 15,
+        "nombre": "Picador Darth Vader",
+        "precio": 24000,
+        "descripcion":"Picador con diseño de Darth Vader",
+        "imagen":"./src/assets/products/12.jpg"
+    },
+    {
+        "id": 16,
+        "nombre": "Bandeja pequeña de metal",
+        "precio": 8000,
+        "descripcion":"Bandeja de metal Tray 180x125mm de Fun Chubro",
+        "imagen":"./src/assets/products/04.jpg"
+    },
+    {
+        "id": 17,
+        "nombre": "Picador Mini Skup Cogonauts",
+        "precio": 21000,        
+        "descripcion": "Picador Cogonauts diseño Mini Skup llavero",
+        "imagen":"./src/assets/products/05.jpg",
+        "piezas": 3
+    },
+    {
+        "id": 18,
+        "nombre": "Encendedor Clipper",
+        "precio": 3000,
+        "descripcion":"Encendedor Clipper varios diseños",
+        "imagen":"./src/assets/products/07.jpg"
+    },
+    {
+        "id": 19,
+        "nombre": "Pipa IceCream Silicona",
+        "precio": 16000,
+        "descripcion": "Pipa diseño IceCream de silicona y Pirex de 11cm",
+        "imagen":"./src/assets/products/06.jpg"
+    }
+  ]
 }
