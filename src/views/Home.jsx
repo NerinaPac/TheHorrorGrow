@@ -1,7 +1,7 @@
-import About from "../components/About";
-import ContenidoInformativoPublicitario from "../components/ContenidoInformativoPublicitario";
-import Footer from "../components/Footer";
-import ImgHome from "../components/ImgHome";
+import About from "../components/About/About";
+import ContenidoInformativoPublicitario from "../components/ContenidoInformativoPublicitario/ContenidoInformativoPublicitario";
+import Footer from "../components/Footer/Footer";
+import ImgHome from "../components/ImgHome/ImgHome";
 
 function Home() {
 

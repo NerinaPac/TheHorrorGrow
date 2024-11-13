@@ -1,0 +1,20 @@
+{
+
+    "informacion": {  
+        "nosotros":{
+            "reseña": "Somos una pequeña empresa de amigos que comparte una gran pasión: el placer de fumar.Nos encanta disfrutar de un buen cigarrillo de marihuana, utilizando además, productos que hagan de esta experiencia algo especial. Nos aseguramos de ofrecer lo mejor para quienes, como nosotros, valoran un buen momento de relax",
+            "imagen": ""
+                    },
+        "pipas":{ 
+            "reseña": "En THG transformamos cada momento de fumar en una experiencia única. Descubre nuestra exclusiva selección de pipas, cigarrillos artesanales y accesorios de diseño que se adaptan a tu estilo.",
+            "imagen":""
+                }
+    },
+
+    "productos":""
+    
+
+
+
+
+}

@@ -7,7 +7,7 @@ import Home from "./views/Home";
 import Products from "./views/Products";
 
 import Error from "./views/Error"
-import About from './components/About';
+import About from './components/About/About';
 
 
 function App() {

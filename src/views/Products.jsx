@@ -1,6 +1,6 @@
-import ListProduct from "../components/ListProduct";
-import Header from "../components/Header"
-import Footer from "../components/Footer";
+import ListProduct from "../components/ListProduct/ListProduct";
+import Header from "../components/Header/Header"
+import Footer from "../components/Footer/Footer";
 
 function Products() {
 
