@@ -1,12 +1,12 @@
 import "./Card.css"
 
 function Card({infoProducto}) {
-
+    let imagen = `../.${infoProducto.imagen}`;
 
     return(
        <div className="card">
             <img 
-            src= {infoProducto.imagen} 
+            src= {imagen}
             alt="Producto terrorífico" 
             className="card-img" 
             />
