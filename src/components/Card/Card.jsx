@@ -14,7 +14,7 @@ function Card({infoProducto}) {
             <p className="card-description">
                 {infoProducto.descripcion}
             </p>
-            <p>${infoProducto.precio}</p>
+            <h3>${infoProducto.precio}</h3>
             <button className="card-btn">Añadir al carrito</button>
         </div>
 
