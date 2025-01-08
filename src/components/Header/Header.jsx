@@ -1,35 +1,36 @@
 import {Link} from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
+import Nav from "../Nav/Nav";
+import Logo from "../Logo/Logo";
+
 
 
 function Header(){
 
-    const [isOpen, setIsOpen] = useState(false); 
-    const toggleMenu = () => setIsOpen(!isOpen);
+    const NavItems = [
+        { name: 'Producs', link: '/products' },
+        { name: 'About', link: '#about' }
+    ];
+
+  
+    /* const [isOpen, setIsOpen] = useState(false); 
+    const toggleMenu = () => setIsOpen(!isOpen); */
 
     return(
         <header>
             <div className="logoNav">
-                <Link className="linkNavBar" to={`/`}>
-                    <h1>The Horror Grow</h1>
-                </Link>
-                <button className="buttonBurgue" onClick={toggleMenu}>
+                <Logo></Logo>
+                <button className="buttonBurgue" /* onClick={toggleMenu} */>
                 <FontAwesomeIcon icon={faBars} />
                 </button>
-            </div>           
-            <nav className={isOpen ? `oculto` : ``}> 
-                <HashLink smooth className="linkNavBar" to="#about">
-                    <li>About</li> 
-                </HashLink>
-                
-                <Link className="linkNavBar" to={`/products`}>
-                    <li>Products</li>
-                </Link>
-            </nav>
+            </div>
+            <Nav
+            navItems = {NavItems}
+            />           
+            
         </header>
     )
 

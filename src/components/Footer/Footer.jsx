@@ -11,18 +11,18 @@ function Footer(){
             <footer>
                 <div className="listaRS">
                     <li className='icoFace'>
-                        <Link to="https://www.facebook.com/" className='iconoFooter' >
+                        <Link to="https://www.instagram.com/thehorrorgrow/" className='iconoFooter' >
                             <FontAwesomeIcon icon={faFacebook} className='iconoFooter' />
                         </Link>
                     </li>
                     <li className='icoIg'>
-                        <Link to="https://www.instagram.com/evilink.store/" className='iconoFooter'>
+                        <Link to="https://www.instagram.com/thehorrorgrow/" className='iconoFooter'>
                             <FontAwesomeIcon icon={faInstagram} className='iconoFooter'/>
                         </Link>    
                     </li>
                            
                     <li className='icoWs'>
-                        <Link to="https://www.instagram.com/evilink.store/" className='iconoFooter'>
+                        <Link to="https://www.instagram.com/thehorrorgrow/" className='iconoFooter'>
                             <FontAwesomeIcon icon={faWhatsapp} className='iconoFooter'/>
                         </Link>
                     </li>
