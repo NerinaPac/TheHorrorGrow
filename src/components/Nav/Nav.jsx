@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-import {Link} from "react-router-dom";
+import "./Nav.css";
 
 function Nav({navItems}){
 

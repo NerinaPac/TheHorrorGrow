@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    justify-content:center;
+    width: 40%;
+}
+
+nav li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.linkNavBar{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--enlace);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  
+    transition: 0.2s ease;  
+}
+
+.linkNavBar:hover{
+    
+    color: var(--enlace-hover);
+    transform: scale(1.05);
+}
+
+@media (max-width: 550px) {
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    
+}
