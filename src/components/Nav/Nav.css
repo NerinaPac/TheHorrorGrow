@@ -23,6 +23,10 @@ nav li{
     transform: scale(1.05);
 }
 
+.oculto{
+    display: none;
+}
+
 @media (max-width: 550px) {
 
     nav {
@@ -31,5 +35,10 @@ nav li{
         
     }
     
+    .buttonBurgue{
+        display: block;
+    }
+
+   
     
 }

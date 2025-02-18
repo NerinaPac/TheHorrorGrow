@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import ListProduct from "../components/ListProduct/ListProduct";
 import Nav from "../components/Nav/Nav";
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header"
 import Data from "../data/data.json"
 
 function Products() {
@@ -20,7 +21,7 @@ function Products() {
 
     return(
         <div>
-            <Nav
+            <Header
             navItems = {itemsNav}
             />
             <ListProduct productos={products} loading={loading} />

@@ -3,6 +3,9 @@ header{
     align-items: center;
     justify-content: space-around;
     padding-top: 1rem;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
 }
 
 .buttonBurgue{

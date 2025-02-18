@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -8,27 +7,24 @@ import Logo from "../Logo/Logo";
 
 
 
-function Header(){
+function Header({navItems}){
 
-    const NavItems = [
-        { name: 'Producs', link: '/products' },
-        { name: 'About', link: '#about' }
-    ];
-
-  
-    /* const [isOpen, setIsOpen] = useState(false); 
-    const toggleMenu = () => setIsOpen(!isOpen); */
+    //funcion y estado de boton hamburguesa
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => setIsOpen(!isOpen);
 
     return(
         <header>
             <div className="logoNav">
-                <Logo></Logo>
-                <button className="buttonBurgue" /* onClick={toggleMenu} */>
-                <FontAwesomeIcon icon={faBars} />
-                </button>
+                <Logo></Logo> 
+                <button className="buttonBurgue" onClick={toggleMenu}>
+                    <FontAwesomeIcon icon={faBars} />
+                </button>        
             </div>
+
             <Nav
-            navItems = {NavItems}
+            navItems = {navItems}
+            burger = {isOpen}
             />           
             
         </header>
