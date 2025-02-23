@@ -7,17 +7,15 @@ import CartButton from '../Cart/CartButton';
 function Nav({navItems, burger}){   
 
     return(
-            <>
-                <nav  className={burger ? `oculto` : ``} >                
-                    {navItems.map((item, index) => (
-                    <HashLink smooth className="linkNavBar" to={item.link} >
-                    <li key={index}>{item.name}</li> 
-                    </HashLink> 
-                    ))}
-                    <CartButton></CartButton>                
-                </nav>
-                
-            </>          
+            <nav  className={burger ? `oculto` : ``} >                
+                {navItems.map((item, index) => (
+                <HashLink key={index} smooth className="linkNavBar" to={item.link} >
+                <li >{item.name}</li> 
+                </HashLink> 
+                ))}
+                <CartButton></CartButton>                
+            </nav>
+                  
     )
 }
 

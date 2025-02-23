@@ -1,10 +1,12 @@
-header{
+.headerStyle{
+    padding: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 1rem;
+    justify-content: space-around;   
+}
+
+.headerHome{
     position: absolute;
-    top: 0px;
     z-index: 1;
 }
 
