@@ -16,8 +16,6 @@ function Products() {
       setProducts(Data.productos);
     }, []); 
 
-
-
     return(
         <div>
             <Header

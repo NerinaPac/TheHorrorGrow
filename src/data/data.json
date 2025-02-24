@@ -19,6 +19,7 @@
       "precio": 26000,
       "descripcion": "Kit para fanáticos de Los Simpson con slider, picador Bart 3D de tres piezas y encendedor catalítico",
       "imagen":"./products/18.jpg",
+      "stock": 20,
       "productos_incluidos": [
         {
           "nombre": "Slider Los Simpson",
@@ -41,6 +42,7 @@
         "precio": 44000,
         "descripcion": "Kit para fanáticos de lo dulce, con bandeja, picador llavero Cogonauts, pipa IceCream silinona y encendedor clipper",
         "imagen":"./products/03.jpg",
+        "stock": 25,
         "productos_incluidos": [
           {
             "nombre": "Bandeja pequeña de metal",

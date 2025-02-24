@@ -1,0 +1,11 @@
+.counterContain{
+padding: 0.5rem 0;
+
+}
+
+.counterContain button, input{
+padding: .5rem;
+text-align: center;
+font-size: 1rem;
+
+}
