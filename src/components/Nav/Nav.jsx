@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import "./Nav.css";
-import CartButton from '../Cart/CartButton';
+import CartButton from '../CartButton/CartButton';
 
 
 function Nav({navItems, burger}){   

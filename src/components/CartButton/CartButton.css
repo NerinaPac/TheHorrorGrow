@@ -1,0 +1,31 @@
+.buttonCart{
+    background-color:transparent;
+    border: none;
+    font-size: 2rem;
+    color: var( --enlace);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  
+    transition: 0.2s ease;
+    position: relative; /* Para que el span se posicione en relación con este div */
+    padding: 10px;
+}
+
+.buttonCart:hover{
+    color: var(--enlace-hover);
+    transform: scale(1.05);
+}
+
+.buttonCart span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--boton);
+    color: var(--texto-principal);
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
