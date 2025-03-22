@@ -1,16 +1,16 @@
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Cart.css"
 import CartProduct from "../CartProduct/CartProduct";
 
-function Cart () {
+function Cart ({valorCarrito, toggleCarrito}) {
 
     return(
 
-        <div className="carrito">
-            <button className="buttonClose"> <FontAwesomeIcon icon={faCircleXmark} /></button>
+        <div className={ valorCarrito ? "carrito" : "carritoEscondido"}>
+            <button className="buttonClose" onClick={toggleCarrito}> <FontAwesomeIcon icon={faCircleXmark} /></button>
             <h2>Carrito de Compras</h2>
-
             <CartProduct></CartProduct>
         </div>
         

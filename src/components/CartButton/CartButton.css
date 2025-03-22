@@ -7,6 +7,7 @@
     transition: 0.2s ease;
     position: relative; /* Para que el span se posicione en relación con este div */
     padding: 10px;
+    cursor: pointer;
 }
 
 .buttonCart:hover{

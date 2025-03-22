@@ -8,9 +8,16 @@
     width: 30rem;
     height: 100vh;
     box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    transition: right 0.5s ease;
+  }
 
+  .carritoEscondido{
+    position: fixed;
+    top: 0px;
+    right: -500px;
 
   }
+
 
   .buttonClose{
     margin: 0.5rem;
@@ -19,5 +26,6 @@
     position: absolute;
     top: 0;
     left: 0;
+    cursor:pointer;
   
   }

@@ -5,7 +5,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
 import Nav from "../Nav/Nav";
 import Logo from "../Logo/Logo";
-import Cart from "../Cart/Cart";
 
 
 
@@ -32,7 +31,7 @@ function Header({navItems}){
             burger = {isOpen}
             />
 
-        <Cart />
+        
 
             
         </header>

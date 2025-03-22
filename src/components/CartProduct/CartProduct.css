@@ -18,6 +18,12 @@
 }
 
 .imgCartProduct{
-    width: 7rem;
+    width: 5rem;
 
+}
+
+.trashDelete{
+    border: none;
+    font-size: 1rem;
+    cursor:pointer;
 }
