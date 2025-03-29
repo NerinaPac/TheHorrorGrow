@@ -21,9 +21,9 @@ function Header({navItems}){
         <header className={isHome ? "headerStyle headerHome" : "headerStyle"}>
             <div className="logoNav">
                 <Logo></Logo> 
-                <button className="buttonBurgue" onClick={toggleMenu}>
+                {/* <button className="buttonBurgue" onClick={toggleMenu}>
                     <FontAwesomeIcon icon={faBars} />
-                </button>        
+                </button>       */}  
             </div>
 
             <Nav

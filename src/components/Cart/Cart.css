@@ -5,7 +5,7 @@
     top: 0;
     right: 0;
     background-color: var( --texto-principal);
-    width: 30rem;
+    width: 27rem;
     height: 100vh;
     box-shadow: -2px 0 5px rgba(0,0,0,0.3);
     transition: right 0.5s ease;
@@ -28,4 +28,9 @@
     left: 0;
     cursor:pointer;
   
+  }
+
+  @media (min-width: 768px){
+   
+    
   }
