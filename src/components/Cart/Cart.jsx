@@ -11,7 +11,7 @@ function Cart ({valorCarrito, toggleCarrito}) {
         <div className={ valorCarrito ? "carrito" : "carritoEscondido"}>
             <button className="buttonClose" onClick={toggleCarrito}> <FontAwesomeIcon icon={faCircleXmark} /></button>
             <h2>Carrito de Compras</h2>
-            <CartProduct></CartProduct>
+            <CartProduct />
         </div>
         
     )

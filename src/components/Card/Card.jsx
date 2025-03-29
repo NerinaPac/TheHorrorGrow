@@ -2,7 +2,7 @@ import "./Card.css"
 import Counter from "../Counter/Counter";
 
 function Card({infoProducto}) {
-    let imagen = `${infoProducto.imagen}`;
+    let imagen = `${infoProducto.image}`;
 
     return(
        <div className="card">
@@ -11,11 +11,11 @@ function Card({infoProducto}) {
             alt="Producto terrorífico" 
             className="card-img" 
             />
-            <h3 className="card-title">{infoProducto.nombre}</h3>
+            <h3 className="card-title">{infoProducto.title}</h3>
             <p className="card-description">
-                {infoProducto.descripcion}
+                {infoProducto.description}
             </p>
-            <h3>${infoProducto.precio}</h3>
+            <h3>${infoProducto.price}</h3>
             <Counter
             infoProducto={infoProducto}
             ></Counter>
