@@ -26,7 +26,6 @@ return(
     <Footer></Footer>
     </>
     
-
 )
 
 }

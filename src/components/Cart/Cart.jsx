@@ -6,6 +6,8 @@ import CartProduct from "../CartProduct/CartProduct";
 
 function Cart ({valorCarrito, toggleCarrito}) {
 
+    
+
     return(
 
         <div className={ valorCarrito ? "carrito" : "carritoEscondido"}>
