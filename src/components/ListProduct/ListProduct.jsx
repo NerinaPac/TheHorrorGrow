@@ -4,7 +4,7 @@ import "./ListProduct.css"
 import Card from "../Card/Card"
 
 
-function ListProduct({productos}){
+function ListProduct({productos, agregarAlCarro}){
 
         const {products, loading, error} = useFetchProducts();
     
@@ -16,7 +16,7 @@ function ListProduct({productos}){
     return(
         <section className="listProducts" >
 
-        { products.map( producto => <Card key={producto.id} producto={producto} />) }
+        { products.map( producto => <Card key={producto.id} producto={producto} agregarAlCarro={agregarAlCarro} />) }
 
         </section>
 

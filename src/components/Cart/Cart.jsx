@@ -4,7 +4,7 @@ import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Cart.css"
 import CartProduct from "../CartProduct/CartProduct";
 
-function Cart ({valorCarrito, toggleCarrito}) {
+function Cart ({valorCarrito, toggleCarrito, productosCarrito}) {
 
     
 
@@ -13,7 +13,11 @@ function Cart ({valorCarrito, toggleCarrito}) {
         <div className={ valorCarrito ? "carrito" : "carritoEscondido"}>
             <button className="buttonClose" onClick={toggleCarrito}> <FontAwesomeIcon icon={faCircleXmark} /></button>
             <h2>Carrito de Compras</h2>
-            <CartProduct />
+            {productosCarrito.map((producto, index)=> (
+               <CartProduct key={index}  infoProducto={producto}/> 
+
+            ))}
+            
         </div>
         
     )

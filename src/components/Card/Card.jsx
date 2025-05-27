@@ -1,11 +1,13 @@
 import "./Card.css"
 import Counter from "../Counter/Counter";
 
-function Card({producto}) {
+function Card({producto, agregarAlCarro}) {
     let imagen = `${producto.image}`;
+    
+    // Función para agregar al carrito
     const handleClick = () => {
-    console.log("🛒 Producto seleccionado:", producto);
-    // Acá podés llamar a una función para agregar al carrito, por ejemplo
+    agregarAlCarro(producto)
+    
   };
   
 
