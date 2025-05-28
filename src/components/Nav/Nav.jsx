@@ -5,7 +5,7 @@ import "./Nav.css";
 import CartButton from '../CartButton/CartButton';
 import Cart from "../Cart/Cart";
 
-function Nav({burger, productosCarrito}){   
+function Nav({burger, productosCarrito, eliminarDelCarro}){   
 
     const [mostrarCarrito, setMostrarCarrito] = useState(false);
     const [ItemsVisualesNav, setItemsVisualesNav] = useState([]);
@@ -45,6 +45,7 @@ function Nav({burger, productosCarrito}){
                 valorCarrito = {mostrarCarrito}
                 toggleCarrito = {toggleCarrito}
                 productosCarrito = {productosCarrito}
+               eliminarDelCarro={eliminarDelCarro}
                 />
 
             </div>

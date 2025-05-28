@@ -3,9 +3,14 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import "./CartProduct.css"
 
 
-function CartProduct ({infoProducto}) {
+function CartProduct ({infoProducto, eliminarDelCarro}) {
 
     let imagen = `${infoProducto.image}`;
+    
+    const eliminar = () => {
+        eliminarDelCarro(infoProducto.id)
+    }
+    
 
     return(
 
@@ -14,13 +19,14 @@ function CartProduct ({infoProducto}) {
             <img src={imagen} alt={infoProducto.title} className="imgCartProduct"/>
             
             <div className="cartProductInfo">
-                <h4>{infoProducto.title}</h4>  
+                <h4>{infoProducto.title}</h4>
+                <p>Unidades: {infoProducto.cantidad}</p>
             </div>
             <div>
-                <p>{infoProducto.price}</p>
+                <p>${infoProducto.price}</p>
                 
             </div>
-            <button className='trashDelete'><FontAwesomeIcon icon={faTrash} /></button>
+            <button className='trashDelete' onClick={eliminar}><FontAwesomeIcon icon={faTrash} /></button>
             
         </div>
 

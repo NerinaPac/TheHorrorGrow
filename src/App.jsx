@@ -13,21 +13,50 @@ import Header from './components/Header/Header';
 
 function App() {
   AOS.init();
-  const [productosCart, setProductosCart] = useState([]);
 
+  //Logica de Carrito de Compras: 
+
+  const [productosCart, setProductosCart] = useState([]);
+  
   const agregarAlCarro = (product) => {
-    setProductosCart([...productosCart, product]);
+      const existe = productosCart.find(item => item.id === product.id);
+      let nuevoCarrito;
+      if (existe) {      
+        nuevoCarrito = productosCart.map(item =>
+          item.id === product.id
+            ? { ...item, cantidad: item.cantidad + 1 }
+            : item
+        );
+      } else {
+            nuevoCarrito = [...productosCart, { ...product, cantidad: 1 }];
+      }
+      setProductosCart(nuevoCarrito);
+      localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
+
   };
+
+  const eliminarProducto = (id) => {
+      const nuevoCarrito = productosCart.map(item => {
+          if (item.id === id) {
+            return { ...item, cantidad: item.cantidad - 1 };
+          }
+          return item;
+        })
+        .filter(item => item.cantidad > 0);
+
+      setProductosCart(nuevoCarrito);
+      localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
+};
   
 
   return (
   
     <BrowserRouter>      
-      <Header productosCarrito={productosCart} />      
+      <Header productosCarrito={productosCart} eliminarDelCarro={eliminarProducto} />      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} /> 
-        <Route path="/products" element={<Products agregarAlCarro={agregarAlCarro} />} /> 
+        <Route path="/products" element={<Products agregarAlCarro={agregarAlCarro}  />} /> 
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

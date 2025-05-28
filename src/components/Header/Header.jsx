@@ -8,7 +8,7 @@ import Logo from "../Logo/Logo";
 
 
 
-function Header({navItems, productosCarrito}){
+function Header({navItems, productosCarrito, eliminarDelCarro}){
 
     const location = useLocation();
     const isHome = location.pathname === "/";
@@ -29,6 +29,7 @@ function Header({navItems, productosCarrito}){
             <Nav
             burger = {isOpen}
             productosCarrito={productosCarrito}
+            eliminarDelCarro={eliminarDelCarro}
             />
         </header>
     )
