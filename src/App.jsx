@@ -19,6 +19,7 @@ function App() {
   const [productosCart, setProductosCart] = useState([]);
   
   const agregarAlCarro = (product) => {
+    
       const existe = productosCart.find(item => item.id === product.id);
       let nuevoCarrito;
       if (existe) {      
@@ -48,6 +49,7 @@ function App() {
       localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
 };
   
+  console.log(window.localStorage)
 
   return (
   
