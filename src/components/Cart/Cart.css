@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  background-color: var(--texto-principal);
+  background-color: var(--texto-secundario);
   width: 27rem;
   min-height: 100vh;
   box-shadow: -2px 0 5px rgba(0,0,0,0.3);
@@ -19,11 +19,6 @@
   transform: translateX(100%);
 }
 
-.carritoContenido {
-  overflow-y: auto;
-  flex: 1; /* Ocupa el espacio restante del carrito */
-}
-
 .buttonClose {
   margin: 0.5rem;
   border: none;
@@ -32,11 +27,15 @@
   top: 0.5rem;
   right: 0.5rem;
   background: transparent;
-  color: #fff;
+  color: var(--boton);
   cursor: pointer;
 }
 
-  @media (min-width: 768px){
+  @media (max-width: 768px){
    
+    .carrito{
+    width: 100vh;
+
+   }
     
   }
