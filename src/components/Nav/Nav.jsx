@@ -38,6 +38,7 @@ function Nav({burger, productosCarrito, eliminarDelCarro}){
                     ))}
                     <CartButton
                     toggleCarrito = {toggleCarrito}
+                    productosCarrito = {productosCarrito}
                     ></CartButton>                               
                 </nav>
 
@@ -45,7 +46,7 @@ function Nav({burger, productosCarrito, eliminarDelCarro}){
                 valorCarrito = {mostrarCarrito}
                 toggleCarrito = {toggleCarrito}
                 productosCarrito = {productosCarrito}
-               eliminarDelCarro={eliminarDelCarro}
+                eliminarDelCarro={eliminarDelCarro}
                 />
 
             </div>

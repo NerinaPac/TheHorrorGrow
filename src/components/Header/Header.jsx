@@ -8,7 +8,7 @@ import Logo from "../Logo/Logo";
 
 
 
-function Header({navItems, productosCarrito, eliminarDelCarro}){
+function Header({productosCarrito, eliminarDelCarro}){
 
     const location = useLocation();
     const isHome = location.pathname === "/";
