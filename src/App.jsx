@@ -1,6 +1,8 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { useState } from "react";
 import './App.css'
 import Home from "./views/Home";
@@ -33,6 +35,7 @@ function App() {
       }
       setProductosCart(nuevoCarrito);
       localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
+      toast.success('Producto añadido al carrito')
 
   };
 
@@ -49,11 +52,12 @@ function App() {
       localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
 };
   
-  console.log(window.localStorage)
+ 
 
   return (
   
-    <BrowserRouter>      
+    <BrowserRouter>
+      <Toaster position="top-right" reverseOrder={false} />      
       <Header productosCarrito={productosCart} eliminarDelCarro={eliminarProducto} />      
       <Routes>
         <Route path="/" element={<Home />} />
