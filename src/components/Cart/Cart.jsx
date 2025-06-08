@@ -20,9 +20,16 @@ function Cart({ valorCarrito, toggleCarrito, productosCarrito, eliminarDelCarro 
                     infoProducto={producto}
                     eliminarDelCarro={eliminarDelCarro}
                 />
+               
                 ))
             )}
+
+        <div className='totalPagar'>
+          <p>Total a pagar: ....</p>
+          <button className="cardFinalizar">Finalizar compra</button>
+        </div>
       
+       
 
       
     </aside>

@@ -23,7 +23,7 @@ function CartProduct ({infoProducto, eliminarDelCarro}) {
                 <p>Unidades: {infoProducto.cantidad}</p>
             </div>
             <div>
-                <p>${infoProducto.price}</p>
+                <p>${infoProducto.price * infoProducto.cantidad}</p>
                 
             </div>
             <button className='trashDelete' onClick={eliminar}><FontAwesomeIcon icon={faTrash} /></button>
