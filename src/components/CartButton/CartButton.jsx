@@ -3,6 +3,7 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import "./CartButton.css"
 
 function CartButton ({toggleCarrito, productosCarrito}){
+  
   const totalItems = productosCarrito.reduce((sum, item) => sum + item.cantidad, 0);
 
   
