@@ -1,27 +1,21 @@
 import { useEffect, useState } from "react"
 import ListProduct from "../components/ListProduct/ListProduct";
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header"
-import Data from "../data/data.json"
+import Data from "../data/data.json";
 
-function Products() {
+function Products({agregarAlCarro}) {
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
-    const itemsNav = [
-       { name: 'Home', link: '/' }
-    ]
+    
 
     useEffect(() => {
       setProducts(Data.productos);
     }, []); 
 
     return(
-        <div>
-            <Header
-            navItems = {itemsNav}
-            />
-            <ListProduct productos={products} loading={loading} />
+        <div>            
+            <ListProduct productos={products} loading={loading} agregarAlCarro={agregarAlCarro} />
             <Footer />
         </div>
     )

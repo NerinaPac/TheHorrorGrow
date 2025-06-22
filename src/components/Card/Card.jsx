@@ -1,8 +1,15 @@
 import "./Card.css"
 import Counter from "../Counter/Counter";
 
-function Card({infoProducto}) {
-    let imagen = `${infoProducto.image}`;
+function Card({producto, agregarAlCarro}) {
+    let imagen = `${producto.image}`;
+    
+    // Función para agregar al carrito
+    const handleClick = () => {
+    agregarAlCarro(producto)
+    
+  };
+  
 
     return(
        <div className="card">
@@ -11,15 +18,15 @@ function Card({infoProducto}) {
             alt="Producto terrorífico" 
             className="card-img" 
             />
-            <h3 className="card-title">{infoProducto.title}</h3>
+            <h3 className="card-title">{producto.title}</h3>
             <p className="card-description">
-                {infoProducto.description}
+                {producto.description}
             </p>
-            <h3>${infoProducto.price}</h3>
+            <h3>${producto.price}</h3>
             <Counter
-            infoProducto={infoProducto}
+            infoProducto={producto}
             ></Counter>
-            <button className="card-btn">Añadir al carrito</button>
+            <button className="card-btn" onClick={handleClick}>Añadir al carrito</button>
             
 
         </div>

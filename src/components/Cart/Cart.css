@@ -1,36 +1,68 @@
-.carrito{
-    padding: 1rem 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: var( --texto-principal);
-    width: 27rem;
-    height: 100vh;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-    transition: right 0.5s ease;
-  }
+.carrito {
+  padding: 1rem 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--texto-secundario);
+  width: 27rem;
+  height: 100vh;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  transition: right 0.5s ease;
+  z-index: 999;
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+  overflow:scroll;
+}
 
-  .carritoEscondido{
-    position: fixed;
-    top: 0px;
-    right: -500px;
+.carrito.cerrado {
+  right: -500px;
+  transform: translateX(100%);
+}
 
-  }
+.buttonClose {
+  margin: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  color: var(--boton);
+  cursor: pointer;
+}
 
+.totalPagar{
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
 
-  .buttonClose{
-    margin: 0.5rem;
+.cardFinalizar {
+    background-color: var(--boton);
+    color: var(--texto-principal);
+    font-size: 1rem;
+    padding: 1rem 6rem;
+    margin-top: 0.5rem;
     border: none;
-    font-size: 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    cursor:pointer;
-  
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 
-  @media (min-width: 768px){
+  .cardFinalizar:hover{
+    background-color: var(--boton-hover);
+    transform: scale(1.05);
+  } 
+
+
+  @media (max-width: 768px){
    
+    .carrito{
+    width: 100%;
+
+   }
     
   }
+
+ 

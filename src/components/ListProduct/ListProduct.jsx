@@ -4,9 +4,9 @@ import "./ListProduct.css"
 import Card from "../Card/Card"
 
 
-function ListProduct({productos}){
+function ListProduct({productos, agregarAlCarro}){
 
-    const {products, loading, error} = useFetchProducts();
+        const {products, loading, error} = useFetchProducts();
     
     if (loading) return <div className="text-center text-white"><Spinner /></div>;
     if (error) return <div className="text-center text-red-500">{error}</div>;
@@ -16,7 +16,7 @@ function ListProduct({productos}){
     return(
         <section className="listProducts" >
 
-        { products.map( producto => <Card key={producto.id} infoProducto={producto} />) }
+        { products.map( producto => <Card key={producto.id} producto={producto} agregarAlCarro={agregarAlCarro} />) }
 
         </section>
 

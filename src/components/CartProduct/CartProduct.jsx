@@ -1,25 +1,32 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import "./CartProduct.css"
-import producto from "../../../public/products/01.jpg"
 
-function CartProduct () {
+
+function CartProduct ({infoProducto, eliminarDelCarro}) {
+
+    let imagen = `${infoProducto.image}`;
+    
+    const eliminar = () => {
+        eliminarDelCarro(infoProducto.id)
+    }
+    
 
     return(
 
         <div className="cartProductCnt">
             
-            <img src={producto} alt="una pipa de agua" className="imgCartProduct"/>
+            <img src={imagen} alt={infoProducto.title} className="imgCartProduct"/>
             
             <div className="cartProductInfo">
-                <h4>Nombre del producto</h4>
-                <p>Obsrevaciones del producto.</p>    
+                <h4>{infoProducto.title}</h4>
+                <p>Unidades: {infoProducto.cantidad}</p>
             </div>
             <div>
-                <p>$30000000</p>
+                <p>${infoProducto.price * infoProducto.cantidad}</p>
                 
             </div>
-            <button className='trashDelete'><FontAwesomeIcon icon={faTrash} /></button>
+            <button className='trashDelete' onClick={eliminar}><FontAwesomeIcon icon={faTrash} /></button>
             
         </div>
 
