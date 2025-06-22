@@ -7,10 +7,11 @@ import { useState } from "react";
 import './App.css'
 import Home from "./views/Home";
 import Products from "./views/Products";
-
+import Admin from "./views/Admin"
 import Error from "./views/Error"
 import About from './components/About/About';
 import Header from './components/Header/Header';
+
 
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} /> 
         <Route path="/products" element={<Products agregarAlCarro={agregarAlCarro}  />} /> 
+        <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

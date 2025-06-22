@@ -28,7 +28,7 @@ function Footer(){
                 <div className='textFooter'>
                     <p>Telefono: 11-0808-0808</p>
                     <p>Villa Ortuzar, CABA</p>
-                    <p>No tenemos Showroom</p>
+                    <Link to="/admin">Administrador</Link>
                     <p>Copyright © 2024 Nerina Pac</p>
                 </div>
 
