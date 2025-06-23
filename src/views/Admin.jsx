@@ -1,7 +1,10 @@
+import AdminLogin from "../components/AdminLogin/AdminLogin"
+
 function Admin() {
     return (
     <>
-        <h1>Señor Administrador</h1>
+        
+        <AdminLogin></AdminLogin>
     
     </>
     
