@@ -29,8 +29,12 @@ nav li{
 @media (max-width: 550px) {
 
     nav {
-        display: flex;
-        flex-wrap: wrap;
+        font-size: 1rem;
+        align-items: center;
+
+        li{
+            padding: 0 0.5rem;
+        }
         
     }
     

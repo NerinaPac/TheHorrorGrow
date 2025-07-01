@@ -6,7 +6,6 @@ function Admin() {
     <>
         
         <AdminLogin></AdminLogin>
-        <UploadFile></UploadFile>
     
     </>
     
