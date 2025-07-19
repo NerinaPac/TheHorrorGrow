@@ -8,6 +8,7 @@ import './App.css'
 import Home from "./views/Home";
 import Products from "./views/Products";
 import Admin from "./views/Admin"
+import FormPreCompra from './views/FormPreCompra';
 import Error from "./views/Error"
 import About from './components/About/About';
 import Header from './components/Header/Header';
@@ -65,6 +66,7 @@ function App() {
         <Route path="/about" element={<About />} /> 
         <Route path="/products" element={<Products agregarAlCarro={agregarAlCarro}  />} /> 
         <Route path="/admin" element={<Admin />} />
+        <Route path="/formprecompra" element={<FormPreCompra/>} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

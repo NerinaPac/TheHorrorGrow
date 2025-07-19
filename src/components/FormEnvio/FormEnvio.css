@@ -1,0 +1,44 @@
+.formularioPreCompra{
+    margin: auto;
+    max-width: 30rem;
+    height: 30rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+.labelsCompra{
+
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--texto-secundario);
+
+}
+
+select{
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.bntFinalizarCompra{
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    background-color: var(--acento);
+
+}
+
+@media (max-width: 550px) {
+
+    .formularioPreCompra{
+        padding: 1rem;
+    
+    }
+   
+    
+}
+
