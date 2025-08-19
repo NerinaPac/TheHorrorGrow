@@ -32,6 +32,12 @@ select{
 
 }
 
+.autocomplete-google input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
 @media (max-width: 550px) {
 
     .formularioPreCompra{

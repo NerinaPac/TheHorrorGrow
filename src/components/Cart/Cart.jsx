@@ -1,6 +1,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import { HashLink } from 'react-router-hash-link';
 import "./Cart.css"
 import CartProduct from "../CartProduct/CartProduct";
 
@@ -45,7 +46,9 @@ function Cart({ valorCarrito, toggleCarrito, productosCarrito, eliminarDelCarro 
             ) : (
               <div className='totalPagar'>
                 <p>Total a pagar: ${aPagar.toFixed(2)}</p>
-                <button className="cardFinalizar" onClick={enviarPedidoPorWP}>Finalizar compra</button>
+                <HashLink smooth to="/formprecompra" >
+                    <button className="cardFinalizar">Finalizar compra</button> 
+                 </HashLink>                 
               </div>      
              )}
     </section>
