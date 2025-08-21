@@ -2,26 +2,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { HashLink } from 'react-router-hash-link';
+import { useContext } from 'react';
+import {CartContext} from "../../context/CartContext"
 import "./Cart.css"
 import CartProduct from "../CartProduct/CartProduct";
 
-function Cart({ valorCarrito, toggleCarrito, productosCarrito, eliminarDelCarro }) {
+function Cart({ valorCarrito, toggleCarrito}) {
 
-  let aPagar = productosCarrito.reduce((cont, item) => {
+  const {productosCart} = useContext(CartContext);
+
+  let aPagar = productosCart.reduce((cont, item) => {
     return item.price * item.cantidad + cont
   }, 0);
 
-  let enviarPedidoPorWP = () => {
-    const nroTelefono = "5493487308228";
-    let mensaje = "Hola! Me encanta tu tienda, quiero hacer el siguiente pedido: \n\n"
-    productosCarrito.forEach((producto) => {
-      mensaje += `• ${producto.title} x${producto.cantidad} - $${(producto.price * producto.cantidad).toFixed(2)}\n`;
-    });
-    mensaje += `\nTotal: $${aPagar.toFixed(2)}`;
-    const mensajeCodificado = encodeURIComponent(mensaje);
-    const url = `https://wa.me/${nroTelefono}?text=${mensajeCodificado}`;
-    window.open(url, "_blank");
-  }
 
   return (
     <section className={`carrito ${valorCarrito ? "abierto" : "cerrado"}`}>
@@ -29,19 +22,18 @@ function Cart({ valorCarrito, toggleCarrito, productosCarrito, eliminarDelCarro 
         <FontAwesomeIcon icon={faCircleXmark} />
       </button>
       <h2>Carrito de Compras</h2>
-            {productosCarrito.length === 0 ? (
+            {productosCart.length === 0 ? (
             <p>Tu carrito está vacío</p>
-             ) : ( productosCarrito.map((producto) => (
+             ) : ( productosCart.map((producto) => (
                 <CartProduct
                     key={producto.id}
                     infoProducto={producto}
-                    eliminarDelCarro={eliminarDelCarro}
                 />
                          
               ))
             )}
 
-            {productosCarrito.length === 0 ? (
+            {productosCart.length === 0 ? (
               <p></p>
             ) : (
               <div className='totalPagar'>

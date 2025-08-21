@@ -19,6 +19,19 @@ function FormEnvio(){
                
     }
 
+    let enviarPedidoPorWP = () => {
+        const nroTelefono = "5493487308228";
+        let mensaje = "Hola! Me encanta tu tienda, quiero hacer el siguiente pedido: \n\n"
+        productosCarrito.forEach((producto) => {
+          mensaje += `• ${producto.title} x${producto.cantidad} - $${(producto.price * producto.cantidad).toFixed(2)}\n`;
+        });
+        mensaje += `\nTotal: $${aPagar.toFixed(2)}`;
+        const mensajeCodificado = encodeURIComponent(mensaje);
+        const url = `https://wa.me/${nroTelefono}?text=${mensajeCodificado}`;
+        window.open(url, "_blank");
+      }
+
+
     const enviarForm = (e) =>{
         e.preventDefault();
         const mensaje = Object.entries(infoForm)

@@ -1,14 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { useContext } from 'react';
+import {CartContext} from "../../context/CartContext"
 import "./CartProduct.css"
 
 
-function CartProduct ({infoProducto, eliminarDelCarro}) {
+function CartProduct ({infoProducto}) {
+
+    const {eliminarProducto} = useContext(CartContext)
 
     let imagen = `${infoProducto.image}`;
     
     const eliminar = () => {
-        eliminarDelCarro(infoProducto.id)
+        eliminarProducto(infoProducto.id)
     }
     
 
