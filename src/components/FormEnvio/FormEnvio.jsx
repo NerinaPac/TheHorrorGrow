@@ -1,4 +1,3 @@
-import AutocompleteGoogle from "../AutocompleteGoogle/AutocompleteGoogle";
 import {useState, useContext} from "react";
 import {CartContext} from "../../context/CartContext"
 
@@ -19,7 +18,7 @@ function FormEnvio(){
 
     const infoInput = (e) => { // Caputa los datos del input
         const {id, value} = e.target; //variables dinamicas
-        setInfoForm((prev) => ({...prev, [id]: value, domicilio: direccion}));   
+        setInfoForm((prev) => ({...prev, [id]: value}));   
                
     }
 
@@ -65,10 +64,8 @@ function FormEnvio(){
                         <label htmlFor="telefono" className="labelsCompra">Teléfono</label>
                         <input type="number" onChange={infoInput} id="telefono" placeholder="Introduce tu Número de Teléfono" required />
 
-                        <label htmlFor="domicilio" className="labelsCompra">Domicilio</label>
-                        <div className="autocomplete-google">              
-                            <AutocompleteGoogle  setDireccion={setDireccion}/>
-                        </div>
+                        <label htmlFor="domicilio" className="labelsCompra">Domicilio</label>                         
+                        <input type="text" id="domicilio" onChange={infoInput} placeholder="Introduce tu Domicilio"required/> 
 
                         <label htmlFor="envioRetiro" className="labelsCompra">Entrega de pedido</label>                
                         <select name="" id="envioRetiro" onChange={infoInput}>
